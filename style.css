@@ -48,7 +48,7 @@ body {
         font-size: 1.2rem;
     }
     #typewriter-cursor {
-        height: 1em;
+        height: 1.5em;
     }
     #typewriter-container {
         max-width: 90%;
