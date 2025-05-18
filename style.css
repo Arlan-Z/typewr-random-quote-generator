@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #282c34;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+#typewriter-container {
+    text-align: left; 
+    max-width: 400px; 
+    width: 100%; 
+    border: 1px solid #444; 
+    padding: 15px;
+    background-color: #333842;
+    border-radius: 5px;
+}
+
+#typewriter-text {
+    font-size: 1.5rem; 
+    color: #61dafb;
+    white-space: pre-wrap;
+    word-break: break-word; 
+    display: inline; 
+}
+
+#typewriter-cursor {
+    display: inline-block; 
+    width: 0.15em;       
+    height: 1.5em;       
+    background-color: orange;
+    margin-left: 2px;    
+    animation: blink-caret .75s step-end infinite;
+    vertical-align: bottom; 
+}
+
+@keyframes blink-caret {
+    from, to { background-color: transparent; }
+    50% { background-color: orange; }
+}
+
+@media (max-width: 600px) {
+    #typewriter-text {
+        font-size: 1.2rem;
+    }
+    #typewriter-cursor {
+        height: 1em;
+    }
+    #typewriter-container {
+        max-width: 90%;
+    }
+}
